@@ -37,14 +37,6 @@ export function Footer({ variant = "full" }: { variant?: "full" | "simple" }) {
           >
             sumeyracaylann@gmail.com
           </a>
-          <a
-            href="https://sumeyra.design"
-            target="_blank"
-            rel="noopener"
-            className="border-b border-transparent text-cream transition-colors hover:border-accent"
-          >
-            sumeyra.design
-          </a>
           <span className="text-[#8489A3]">Munich, Germany</span>
         </div>
       </div>
