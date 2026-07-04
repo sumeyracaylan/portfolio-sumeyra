@@ -9,13 +9,13 @@ const frameClasses =
 
 function TabiiVisual() {
   return (
-    <MockVisualFrame className={frameClasses}>
+    <MockVisualFrame className={`${frameClasses} bg-black`}>
       <Image
         src={tabiiCover}
         alt="Cover image for the tabii design system refactor"
         fill
         sizes="(min-width: 861px) 50vw, 100vw"
-        className="object-cover object-left"
+        className="object-contain"
       />
     </MockVisualFrame>
   );
