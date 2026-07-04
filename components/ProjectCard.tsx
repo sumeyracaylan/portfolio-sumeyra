@@ -40,7 +40,7 @@ export function ProjectCard({
         {project.hasCaseStudy ? (
           <Link
             href={`/work/${project.slug}`}
-            className="border-b-2 border-navy pb-0.5 text-[14.5px] font-semibold text-navy"
+            className="border-b-2 border-navy pb-0.5 text-[22.5px] font-semibold text-navy"
           >
             View full case study →
           </Link>
