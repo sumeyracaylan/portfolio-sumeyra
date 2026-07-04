@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@theme inline {
+  /* neutrals */
+  --color-cream: #ffffff;
+  --color-cream-alt: #f6f5f1;
+  --color-navy: #171f3d;
+  --color-navy-soft: #3a4266;
+  --color-ink-muted: #6c7080;
+  --color-border: #e7e1d2;
+
+  /* accent palette */
+  --color-teal: #3fa79b;
+  --color-teal-soft: #dcf0ec;
+  --color-coral: #ff7a59;
+  --color-coral-soft: #ffe4da;
+  --color-blue: #4c6ef5;
+  --color-blue-soft: #e1e6fd;
+  --color-accent: #f18a3c;
+  --color-accent-soft: #fde3ce;
+
+  /* hero section background -- NOT the hero headline text color (that's navy) */
+  --color-hero-bg: #b1e1e2;
+
+  /* tabii brand */
+  --color-tabii-green: #0e2e24;
+  --color-tabii-green-2: #123d2e;
+  --color-tabii-lime: #8fd14f;
+
+  /* the footer CV button is intentionally distinct from the navy primary button */
+  --color-footer-cv: #4dc1d6;
+
+  --radius-card: 28px;
+
+  --font-sans: var(--font-manrope);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans), sans-serif;
+}
