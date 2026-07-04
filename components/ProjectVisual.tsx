@@ -1,4 +1,6 @@
+import Image from "next/image";
 import { MockCard, MockPhone, MockVisualFrame } from "./mock-primitives";
+import tabiiCover from "@/public/images/tabii-cover.png";
 
 export type ProjectVisualVariant = "tabii" | "delphi" | "appguard" | "mtm";
 
@@ -7,33 +9,14 @@ const frameClasses =
 
 function TabiiVisual() {
   return (
-    <MockVisualFrame
-      className={frameClasses}
-      style={{
-        background:
-          "radial-gradient(120% 120% at 20% 15%, #1B4A38 0%, var(--color-tabii-green) 60%)",
-      }}
-    >
-      <MockPhone
-        className="left-[10%] top-[8%] w-[44%] aspect-[9/18.5]"
-        screenClassName="bg-[linear-gradient(180deg,#0E2E24,#123D2E)]"
-      >
-        <div className="flex h-full flex-col gap-1.5 p-3.5">
-          <div className="h-2 w-[60%] rounded bg-tabii-lime" />
-          <div className="mt-2 h-[38px] w-full rounded-lg bg-white/10" />
-          <div className="mt-2 grid grid-cols-2 gap-1.5">
-            <div className="h-[46px] rounded-md bg-white/10" />
-            <div className="h-[46px] rounded-md bg-white/10" />
-            <div className="h-[46px] rounded-md bg-white/10" />
-            <div className="h-[46px] rounded-md bg-white/10" />
-          </div>
-        </div>
-      </MockPhone>
-      <MockCard className="right-[8%] bottom-[12%] w-[52%] p-4">
-        <div className="mb-2.5 h-[34px] w-[34px] rounded-lg bg-tabii-green" />
-        <div className="mb-2 h-[9px] w-[80%] rounded bg-border" />
-        <div className="h-[9px] w-[55%] rounded bg-border" />
-      </MockCard>
+    <MockVisualFrame className={frameClasses}>
+      <Image
+        src={tabiiCover}
+        alt="Cover image for the tabii design system refactor"
+        fill
+        sizes="(min-width: 861px) 50vw, 100vw"
+        className="object-cover"
+      />
     </MockVisualFrame>
   );
 }
